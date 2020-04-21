@@ -54,7 +54,10 @@ public class Awaazde extends Methods {
 	
 		  if(Currenttemp<i) 
 		  {
-			  System.out.println("buy a"); 
+			  
+			  
+			  Methods.click(objects.Moisturizers);
+			  Wait();
 			  
 			  List<Integer> pricelistvalue = new ArrayList<Integer>();
 	           List<WebElement> pricelist = driver.findElements(By.xpath(".//p[contains(text(),'Aloe')]/parent::div/p[last()]"));
@@ -76,9 +79,10 @@ public class Awaazde extends Methods {
 		  } 
 		  else if(Currenttemp<j){
 		  
-		  System.out.println("buy b"); 
+		   
 		  
-		  
+		  Methods.click(objects.Moisturizers);
+		  Wait();
 		  List<Integer> pricelistvalue = new ArrayList<Integer>();
            List<WebElement> pricelist = driver.findElements(By.xpath(".//p[contains(text(),'SPF-50')]/parent::div/p[last()]"));
             for (int i1 = 0; i1 < pricelist.size(); i1++)

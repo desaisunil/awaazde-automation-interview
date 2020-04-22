@@ -2,22 +2,25 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38443" started-at="2020-04-21T12:27:23Z" finished-at="2020-04-21T12:28:01Z">
+  <suite name="Default suite" duration-ms="11822" started-at="2020-04-21T14:33:48Z" finished-at="2020-04-21T14:33:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38443" started-at="2020-04-21T12:27:23Z" finished-at="2020-04-21T12:28:01Z">
+    <test name="Default test" duration-ms="11822" started-at="2020-04-21T14:33:48Z" finished-at="2020-04-21T14:33:59Z">
       <class name="Pages.Awaazde">
-        <test-method status="PASS" signature="startup()[pri:0, instance:Pages.Awaazde@68c4039c]" name="startup" is-config="true" duration-ms="8297" started-at="2020-04-21T12:27:23Z" finished-at="2020-04-21T12:27:31Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:Pages.Awaazde@68c4039c]" name="startup" is-config="true" duration-ms="8426" started-at="2020-04-21T14:33:48Z" finished-at="2020-04-21T14:33:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="FAIL" signature="weathershopper()[pri:0, instance:Pages.Awaazde@68c4039c]" name="weathershopper" duration-ms="30106" started-at="2020-04-21T12:27:31Z" finished-at="2020-04-21T12:28:01Z">
-          <exception class="java.util.NoSuchElementException">
+        <test-method status="FAIL" signature="weathershopper()[pri:0, instance:Pages.Awaazde@68c4039c]" name="weathershopper" duration-ms="3368" started-at="2020-04-21T14:33:56Z" finished-at="2020-04-21T14:33:59Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 19, Size: 4]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException
-at java.util.ArrayList$Itr.next(Unknown Source)
-at java.util.Collections.min(Unknown Source)
-at Pages.Awaazde.weathershopper(Awaazde.java:73)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 19, Size: 4
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at Pages.Awaazde.weathershopper(Awaazde.java:68)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -45,7 +48,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- weathershopper -->

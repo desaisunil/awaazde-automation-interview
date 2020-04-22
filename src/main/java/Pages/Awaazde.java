@@ -65,9 +65,10 @@ public class Awaazde extends Methods {
 	            {
 	            	
 	            	
-	            	String element = pricelist.get(i).getText();
-	            	 
-	            	 String price = element.substring(0, 3);
+	            	WebElement element = pricelist.get(i);
+	            	String newelement = element.getText();
+	            	 System.out.println(newelement);
+	            	 String price = newelement.substring(0, 3);
 	            	 Integer Rs =Integer.parseInt(price);
 	                 pricelistvalue.add(Rs);
 	                
@@ -77,11 +78,11 @@ public class Awaazde extends Methods {
 	            driver.findElement(By.xpath(".//p[contains(text(),'"+value+"')]/parent::div/button")).click();
 			  
 		  } 
-		  else if(Currenttemp<j){
+		  else if(Currenttemp>j){
 		  
 		   
 		  
-		  Methods.click(objects.Moisturizers);
+		  Methods.click(objects.Sunscreens);
 		  Wait();
 		  List<Integer> pricelistvalue = new ArrayList<Integer>();
            List<WebElement> pricelist = driver.findElements(By.xpath(".//p[contains(text(),'SPF-50')]/parent::div/p[last()]"));
@@ -89,9 +90,11 @@ public class Awaazde extends Methods {
             {
             	
             	
-            	String element = pricelist.get(i).getText();
-            	 
-            	 String price = element.substring(0, 3);
+
+            	WebElement element = pricelist.get(i);
+            	String newelement = element.getText();
+            	 System.out.println(newelement);
+            	 String price = newelement.substring(0, 3);
             	 Integer Rs =Integer.parseInt(price);
                  pricelistvalue.add(Rs);
                 

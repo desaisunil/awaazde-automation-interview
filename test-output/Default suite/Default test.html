@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 21 17:57:23 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 21 20:03:48 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38443 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11822 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Pages.Awaazde.weathershopper()'><b>weathershopper</b><br>Test class: Pages.Awaazde</td>
-<td><div><pre>java.util.NoSuchElementException
-	at java.util.ArrayList$Itr.next(Unknown Source)
-	at java.util.Collections.min(Unknown Source)
-	at Pages.Awaazde.weathershopper(Awaazde.java:73)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 19, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at Pages.Awaazde.weathershopper(Awaazde.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,11 +105,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1440621772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1440621772'><pre>java.util.NoSuchElementException
-	at java.util.ArrayList$Itr.next(Unknown Source)
-	at java.util.Collections.min(Unknown Source)
-	at Pages.Awaazde.weathershopper(Awaazde.java:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace352367347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace352367347'><pre>java.lang.IndexOutOfBoundsException: Index: 19, Size: 4
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at Pages.Awaazde.weathershopper(Awaazde.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -136,7 +136,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>30</td>
+<td>3</td>
 <td>Pages.Awaazde@68c4039c</td></tr>
 </table><p>
 </body>
